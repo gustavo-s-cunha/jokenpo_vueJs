@@ -1,0 +1,44 @@
+// @import "~rfs/scss";
+// @import "@/node_modules/rfs/scss";
+
+
+/* Media Query variables */
+$viewport-3: 375px;
+$viewport-13: 1366px;
+
+/* Colors */
+$white: hsl(0deg, (0 * 1%), 98%);
+
+$scissors-from: hsl(39deg, 89%, 49%);
+$scissors-to: hsl(40deg, 84%, 53%);
+
+$paper-from:  hsl(230deg, 89%, 62%);
+$paper-to: hsl(230deg, 89%, 65%);
+
+$rock-from: hsl(349deg, 71%, 52%);
+$rock-to: hsl(349deg, 70%, 56%);
+
+$lizard-from: hsl(261deg, 73%, 60%);
+$lizard-to: hsl(261deg, 72%, 63%);
+
+$spock-from: hsl(189deg, 59%, 53%);
+$spock-to: hsl(189deg, 58%, 57%);
+
+$dark-text: hsl(229deg, 25%, 31%);
+$score-text: hsl(229deg, 64%, 46%);
+$header-outline: hsl(217deg, 16%, 45%);
+
+$background-from: hsl(214deg, 47%, 23%);
+$background-to: hsl(237deg, 49%, 15%);
+
+$token-colors:
+	"rock" $rock-from $rock-to,
+	"paper" $paper-from $paper-to,
+	"scissors" $scissors-from $scissors-to,
+	"lizard" $lizard-from $lizard-to,
+	"spock" $spock-from $spock-to;
+
+:export {
+	bgColorFrom: $background-from;
+	bgColorTo: $background-to;
+}
